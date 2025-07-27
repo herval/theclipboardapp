@@ -9,7 +9,7 @@ set -e  # Exit on any error
 PROJECT_NAME="clipboardapp"
 SCHEME_NAME="clipboardapp"
 APP_NAME="The Clipboard App"
-BUNDLE_ID="us.hervalicio.clipboardapp"
+BUNDLE_ID="us.hervalicio.theclipboardapp"
 BUILD_DIR="./build"
 ARCHIVE_PATH="$BUILD_DIR/$PROJECT_NAME.xcarchive"
 EXPORT_PATH="$BUILD_DIR/export"

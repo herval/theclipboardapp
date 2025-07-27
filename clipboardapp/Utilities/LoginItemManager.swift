@@ -4,19 +4,29 @@ import ServiceManagement
 class LoginItemManager {
     
     static func setLaunchAtLogin(_ enabled: Bool) {
+        print("🔄 Setting launch at login: \(enabled)")
+        
         if #available(macOS 13.0, *) {
             // Use modern SMAppService API for macOS 13+
             let service = SMAppService.mainApp
+            print("📋 Current service status: \(service.status)")
+            
             do {
                 if enabled {
-                    if service.status == .notRegistered {
+                    if service.status == .notRegistered || service.status.rawValue == 3 {
                         try service.register()
                         print("✅ Registered app for launch at login")
+                    } else if service.status == .enabled {
+                        print("ℹ️ App already registered for launch at login")
+                    } else if service.status == .requiresApproval {
+                        print("⚠️ Launch at login requires user approval in System Settings")
                     }
                 } else {
-                    if service.status == .enabled {
+                    if service.status == .enabled || service.status == .requiresApproval {
                         try service.unregister()
                         print("✅ Unregistered app from launch at login")
+                    } else {
+                        print("ℹ️ App not registered for launch at login")
                     }
                 }
             } catch {
@@ -31,7 +41,11 @@ class LoginItemManager {
     static func isLaunchAtLoginEnabled() -> Bool {
         if #available(macOS 13.0, *) {
             let service = SMAppService.mainApp
-            return service.status == .enabled
+            let status = service.status
+            print("📋 Checking launch at login status: \(status.rawValue) (\(status))")
+            
+            // Status values: 0 = notRegistered, 1 = enabled, 2 = requiresApproval, 3 = notFound
+            return status == .enabled || status == .requiresApproval
         } else {
             return isLaunchAtLoginEnabledLegacy()
         }

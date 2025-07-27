@@ -24,7 +24,7 @@ xcodebuild -project clipboardapp.xcodeproj -scheme clipboardappTests -destinatio
 
 ### Code Signing and Deployment
 - Development team: X6ANAH85QC
-- Bundle identifier: us.hervalicio.clipboardapp
+- Bundle identifier: us.hervalicio.theclipboardapp
 - Target platform: macOS 14.0+
 - App name: "Clipboard AI"
 
