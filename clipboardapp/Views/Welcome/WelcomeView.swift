@@ -79,7 +79,6 @@ struct WelcomeView: View {
                 } else {
                     Button("Start using The Clipboard App") {
                         settings.hasShownWelcome = true
-                        AnalyticsService.shared.trackWelcomeCompleted()
                         
                         // Close the welcome window and let the app run in menu bar
                         if let window = NSApplication.shared.keyWindow {

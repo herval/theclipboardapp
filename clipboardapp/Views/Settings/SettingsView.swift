@@ -25,12 +25,6 @@ struct SettingsView: View {
                         }
                         .padding(.leading, 24)
                         
-                        HStack {
-                            Toggle("Share anonymous usage data", isOn: $settings.analyticsEnabled)
-                                .help("Help improve The Clipboard App by sharing anonymous usage analytics")
-                            Spacer()
-                        }
-                        .padding(.leading, 24)
                     }
                 }
                 .padding(16)

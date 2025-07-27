@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		5F621AE72E313FE600CA97CE /* PostHog in Frameworks */ = {isa = PBXBuildFile; productRef = 5F621AE62E313FE600CA97CE /* PostHog */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		5F9753622E198C68008F9010 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -69,7 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F621AE72E313FE600CA97CE /* PostHog in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +125,6 @@
 			);
 			name = theclipboardapp;
 			packageProductDependencies = (
-				5F621AE62E313FE600CA97CE /* PostHog */,
 			);
 			productName = clipboardapp;
 			productReference = 5F9753512E198C66008F9010 /* The Clipboard App.app */;
@@ -215,7 +209,6 @@
 			mainGroup = 5F9753482E198C66008F9010;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				5F621AE52E313FE600CA97CE /* XCRemoteSwiftPackageReference "posthog-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5F9753522E198C66008F9010 /* Products */;
@@ -587,25 +580,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		5F621AE52E313FE600CA97CE /* XCRemoteSwiftPackageReference "posthog-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/PostHog/posthog-ios.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.29.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		5F621AE62E313FE600CA97CE /* PostHog */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5F621AE52E313FE600CA97CE /* XCRemoteSwiftPackageReference "posthog-ios" */;
-			productName = PostHog;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F9753492E198C66008F9010 /* Project object */;
 }

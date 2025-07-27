@@ -17,12 +17,6 @@ class AppSettings: ObservableObject {
         }
     }
     
-    @Published var analyticsEnabled: Bool {
-        didSet {
-            UserDefaults.standard.set(analyticsEnabled, forKey: "analytics_enabled")
-            AnalyticsService.shared.setEnabled(analyticsEnabled)
-        }
-    }
     
     init() {
         
@@ -39,7 +33,6 @@ class AppSettings: ObservableObject {
         }
         
         hasShownWelcome = UserDefaults.standard.bool(forKey: "has_shown_welcome")
-        analyticsEnabled = UserDefaults.standard.object(forKey: "analytics_enabled") as? Bool ?? true // Default to enabled
     }
     
 }

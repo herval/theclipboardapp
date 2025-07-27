@@ -69,10 +69,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
             },
         )
 
-        // Initialize analytics
-        AnalyticsService.shared.initialize()
-        AnalyticsService.shared.setEnabled(AppSettings.shared.analyticsEnabled)
-        AnalyticsService.shared.trackAppLaunch()
         
         // Only automatically open the main window if user hasn't seen welcome flow yet
         if !AppSettings.shared.hasShownWelcome {
