@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5F621AE72E313FE600CA97CE /* PostHog in Frameworks */ = {isa = PBXBuildFile; productRef = 5F621AE62E313FE600CA97CE /* PostHog */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5F9753622E198C68008F9010 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,14 +28,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5F9753512E198C66008F9010 /* clipboardapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clipboardapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9753512E198C66008F9010 /* The Clipboard App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Clipboard App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9753612E198C68008F9010 /* clipboardappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clipboardappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F97536B2E198C68008F9010 /* clipboardappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clipboardappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5FD6340E2E286DFF005E3758 /* Exceptions for "clipboardapp" folder in "theclipboardapp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5F9753502E198C66008F9010 /* theclipboardapp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5F9753532E198C66008F9010 /* clipboardapp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5FD6340E2E286DFF005E3758 /* Exceptions for "clipboardapp" folder in "theclipboardapp" target */,
+			);
 			path = clipboardapp;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F621AE72E313FE600CA97CE /* PostHog in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +103,7 @@
 		5F9753522E198C66008F9010 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F9753512E198C66008F9010 /* clipboardapp.app */,
+				5F9753512E198C66008F9010 /* The Clipboard App.app */,
 				5F9753612E198C68008F9010 /* clipboardappTests.xctest */,
 				5F97536B2E198C68008F9010 /* clipboardappUITests.xctest */,
 			);
@@ -95,9 +113,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5F9753502E198C66008F9010 /* clipboardapp */ = {
+		5F9753502E198C66008F9010 /* theclipboardapp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F9753752E198C68008F9010 /* Build configuration list for PBXNativeTarget "clipboardapp" */;
+			buildConfigurationList = 5F9753752E198C68008F9010 /* Build configuration list for PBXNativeTarget "theclipboardapp" */;
 			buildPhases = (
 				5F97534D2E198C66008F9010 /* Sources */,
 				5F97534E2E198C66008F9010 /* Frameworks */,
@@ -110,11 +128,12 @@
 			fileSystemSynchronizedGroups = (
 				5F9753532E198C66008F9010 /* clipboardapp */,
 			);
-			name = clipboardapp;
+			name = theclipboardapp;
 			packageProductDependencies = (
+				5F621AE62E313FE600CA97CE /* PostHog */,
 			);
 			productName = clipboardapp;
-			productReference = 5F9753512E198C66008F9010 /* clipboardapp.app */;
+			productReference = 5F9753512E198C66008F9010 /* The Clipboard App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5F9753602E198C68008F9010 /* clipboardappTests */ = {
@@ -195,12 +214,15 @@
 			);
 			mainGroup = 5F9753482E198C66008F9010;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5F621AE52E313FE600CA97CE /* XCRemoteSwiftPackageReference "posthog-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5F9753522E198C66008F9010 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5F9753502E198C66008F9010 /* clipboardapp */,
+				5F9753502E198C66008F9010 /* theclipboardapp */,
 				5F9753602E198C68008F9010 /* clipboardappTests */,
 				5F97536A2E198C68008F9010 /* clipboardappUITests */,
 			);
@@ -258,12 +280,12 @@
 /* Begin PBXTargetDependency section */
 		5F9753632E198C68008F9010 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5F9753502E198C66008F9010 /* clipboardapp */;
+			target = 5F9753502E198C66008F9010 /* theclipboardapp */;
 			targetProxy = 5F9753622E198C68008F9010 /* PBXContainerItemProxy */;
 		};
 		5F97536D2E198C68008F9010 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5F9753502E198C66008F9010 /* clipboardapp */;
+			target = 5F9753502E198C66008F9010 /* theclipboardapp */;
 			targetProxy = 5F97536C2E198C68008F9010 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -394,14 +416,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = clipboardapp/clipboardapp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X6ANAH85QC;
+				DEVELOPMENT_TEAM = FRL5Q6ZUSJ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = clipboardapp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Clipboard App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -409,8 +437,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = us.hervalicio.clipboardapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = us.hervalicio.theclipboardapp;
+				PRODUCT_NAME = "The Clipboard App";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -422,14 +450,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = clipboardapp/clipboardapp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X6ANAH85QC;
+				DEVELOPMENT_TEAM = FRL5Q6ZUSJ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = clipboardapp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Clipboard App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -437,8 +471,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = us.hervalicio.clipboardapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = us.hervalicio.theclipboardapp;
+				PRODUCT_NAME = "The Clipboard App";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -525,7 +559,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F9753752E198C68008F9010 /* Build configuration list for PBXNativeTarget "clipboardapp" */ = {
+		5F9753752E198C68008F9010 /* Build configuration list for PBXNativeTarget "theclipboardapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F9753762E198C68008F9010 /* Debug */,
@@ -553,6 +587,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F621AE52E313FE600CA97CE /* XCRemoteSwiftPackageReference "posthog-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PostHog/posthog-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.29.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F621AE62E313FE600CA97CE /* PostHog */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F621AE52E313FE600CA97CE /* XCRemoteSwiftPackageReference "posthog-ios" */;
+			productName = PostHog;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F9753492E198C66008F9010 /* Project object */;
 }

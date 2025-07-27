@@ -1,0 +1,25 @@
+.idea
+misc
+
+# Build artifacts
+build/
+*.xcarchive
+*.ipa
+*.dmg
+*.zip
+
+# Xcode
+DerivedData/
+*.xcuserstate
+*.xcuserdatad
+xcuserdata/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Personal/sensitive files
+setup-notarization.sh
+DISTRIBUTION.md
+.env
